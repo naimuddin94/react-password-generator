@@ -14,7 +14,7 @@ function Generator() {
       let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
       if (numberAllow) str += "0123456789";
       if (characterAllow) str += "@#$%^&*+";
-      for (let i = 0; i <= length; i++) {
+      for (let i = 0; i < length; i++) {
         let char = Math.floor(Math.random() * str.length);
         pass += str.charAt(char);
       }
